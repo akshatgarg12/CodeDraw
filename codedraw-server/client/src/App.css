@@ -1,0 +1,132 @@
+body{
+  margin:0;
+  background-color: #d8d8d8;
+background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.App{
+  text-align: center;
+  margin:0;
+  padding:0;
+  /* background: whitesmoke; */
+}
+nav{
+  background: rgb(251, 251, 251);
+  color:#333;
+  padding: 10px;
+  text-align: center;
+  font-size:1.5rem;
+  font-weight: 600;
+  font-family: monospace;
+}
+.main-div{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.left-part{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin-top:30px;
+}
+.right-part{
+  display:block;
+  justify-content: center;
+  padding: 10px;
+}
+.myEditor{
+  width:95%;
+  height:30vh;
+  border:4px solid black;
+  font: 1.5em monospace;
+  margin:auto;
+}
+.text-area{
+  resize:none;
+  width:95%;
+  height:30vh;
+  margin:auto;
+  font: 1.5em monospace;
+  border: 4px solid black;
+  background: rgb(255, 255, 208)
+}
+.text-area:focus{
+  outline: none;
+}
+.canvas-container{
+  margin:10px 10px;
+  display: flex;
+  flex-direction: row;
+  width:100%;
+}
+.canvas{
+  border:4px solid black;
+  align-self: center;
+  margin:0;
+  width: 100%;
+}
+.canvas-button-div{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+}
+.canvas-button{
+  text-align: center;
+  padding: 1px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  border:none;
+}
+.canvas-button:focus{
+  outline: none;
+  background: yellow;
+} 
+.codeEditor{
+  margin: auto;
+  text-align: left;
+  font-size: 2rem;
+  width:100%;
+  height:70vh;
+}
+.CodeMirror * {
+  font-family:monospace;
+  font-size: 1rem;
+  }
+.IO-box{
+  display:flex;
+  flex-direction: row;
+  height:160px;
+}
+.input-area{
+  width:99%;
+  resize:none;
+  font-size: 1rem;
+  border: 2px solid white;
+  background: #292929;
+  color:#fff;
+}
+.output-area{
+  width:99%;
+  resize:none;
+  font-size: 1rem;
+  border: 2px solid black;
+  background: #fff;
+  color:black;
+}
+.submit{
+  border: 1px solid black;
+  font-size:1.2rem;
+  box-shadow: 0;
+  background: #333;
+  color:#fff;
+  margin-bottom: 5px; 
+  transition: .4s ease all;
+}
+.submit:hover{
+  background: #fff;
+  color:black;
+}
